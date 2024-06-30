@@ -1,0 +1,8 @@
+### HEXMate logfile and output summary ###
+
+### Command-line arguments ###
+ C:\Users\oabin\AppData\Local\Temp\xcAs3t0.\driver_tmp_3.o
+ -Odist/default/debug\TestPoint4.X.debug.hex
+ -logfile=dist/default/debug\TestPoint4.X.debug.hxl
+ -addressing=2
+

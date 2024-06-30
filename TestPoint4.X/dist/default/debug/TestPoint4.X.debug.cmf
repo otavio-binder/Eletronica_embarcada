@@ -1,0 +1,307 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/debug/Tp4.o
+code CODE 0 0 0 40 2 1
+udata_shr COMMON 1 74 74 1 1 1
+config CONFIG 4 2007 2007 2 2 1
+$build/default/debug/Tp4.2tacometro.o
+udata RAM 1 20 20 2 1 1
+interrupt CODE 0 7B0 7B0 50 2 1
+code CODE 0 0 0 30 2 1
+udata_shr COMMON 1 70 70 4 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 22-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 22-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 40-7AF 2
+CONST 800-1FFF 2
+ENTRY 40-7AF 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+CODE 40-7AF 2
+CODE 800-1FFF 2
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 75-7F 1
+EEDATA 2100-21FF 2
+STRCODE 40-7AF 2
+STRCODE 800-1FFF 2
+STRING 40-7AF 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/debug/Tp4.o
+0 code CODE >25:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+2 code CODE >26:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+3 code CODE >30:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+5 code CODE >31:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+6 code CODE >32:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+7 code CODE >33:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+9 code CODE >34:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+A code CODE >35:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+B code CODE >36:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+D code CODE >37:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+E code CODE >38:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+F code CODE >39:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+11 code CODE >40:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+12 code CODE >41:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+13 code CODE >42:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+15 code CODE >43:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+16 code CODE >44:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+17 code CODE >45:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+18 code CODE >46:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+19 code CODE >49:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+1A code CODE >50:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+1C code CODE >50:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+1D code CODE >50:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+1E code CODE >50:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+1F code CODE >51:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+20 code CODE >52:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+22 code CODE >52:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+23 code CODE >52:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+24 code CODE >52:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+25 code CODE >53:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+26 code CODE >54:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+27 code CODE >57:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+28 code CODE >58:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+29 code CODE >61:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+2A code CODE >62:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+2B code CODE >63:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+2C code CODE >64:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+2D code CODE >67:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+2E code CODE >68:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+2F code CODE >69:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+30 code CODE >70:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+31 code CODE >71:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+32 code CODE >72:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+33 code CODE >75:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+34 code CODE >76:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+36 code CODE >77:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+37 code CODE >78:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+38 code CODE >79:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+39 code CODE >80:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+3A code CODE >81:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+3B code CODE >82:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+3C code CODE >83:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+3D code CODE >84:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+3E code CODE >85:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+3F code CODE >86:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.s
+$build/default/debug/Tp4.2tacometro.o
+7B4 interrupt CODE >78:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7B6 interrupt CODE >79:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7B7 interrupt CODE >80:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7B8 interrupt CODE >82:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7B9 interrupt CODE >84:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7BB interrupt CODE >85:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7BC interrupt CODE >87:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7BE interrupt CODE >88:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7BF interrupt CODE >90:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7C0 interrupt CODE >92:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7C1 interrupt CODE >96:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7C3 interrupt CODE >97:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7C4 interrupt CODE >98:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7C5 interrupt CODE >101:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7C7 interrupt CODE >102:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7C8 interrupt CODE >103:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7C9 interrupt CODE >104:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7CA interrupt CODE >105:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7CB interrupt CODE >106:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7CC interrupt CODE >110:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7CE interrupt CODE >111:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7CF interrupt CODE >112:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7D0 interrupt CODE >113:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7D2 interrupt CODE >114:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7D3 interrupt CODE >115:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7D4 interrupt CODE >116:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7D5 interrupt CODE >120:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7D7 interrupt CODE >121:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7D8 interrupt CODE >122:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7D9 interrupt CODE >123:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7DB interrupt CODE >124:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7DC interrupt CODE >125:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7DD interrupt CODE >126:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7DE interrupt CODE >130:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7DF interrupt CODE >131:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7E0 interrupt CODE >133:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7E1 interrupt CODE >134:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7E2 interrupt CODE >135:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7E3 interrupt CODE >141:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7E5 interrupt CODE >142:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7E6 interrupt CODE >143:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7E7 interrupt CODE >144:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7E8 interrupt CODE >146:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7EA interrupt CODE >147:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7EB interrupt CODE >148:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7EC interrupt CODE >149:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7ED interrupt CODE >150:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7EE interrupt CODE >154:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7EF interrupt CODE >155:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7F0 interrupt CODE >156:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7F1 interrupt CODE >157:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7F2 interrupt CODE >158:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7F3 interrupt CODE >159:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7F4 interrupt CODE >160:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7F5 interrupt CODE >161:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7F6 interrupt CODE >162:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7F7 interrupt CODE >163:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7F8 interrupt CODE >164:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7F9 interrupt CODE >165:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7FA interrupt CODE >166:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7FB interrupt CODE >167:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7FC interrupt CODE >168:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7FD interrupt CODE >169:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7FE interrupt CODE >170:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7FF interrupt CODE >171:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+0 code CODE >18:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+2 code CODE >19:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+3 code CODE >24:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+5 code CODE >25:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+6 code CODE >26:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+7 code CODE >28:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+9 code CODE >29:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+A code CODE >31:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+C code CODE >32:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+D code CODE >33:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+E code CODE >34:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+F code CODE >36:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+11 code CODE >37:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+12 code CODE >39:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+14 code CODE >40:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+15 code CODE >41:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+16 code CODE >43:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+18 code CODE >44:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+19 code CODE >45:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+1A code CODE >47:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+1C code CODE >48:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+1D code CODE >50:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+1E code CODE >51:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+1F code CODE >53:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+20 code CODE >54:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+21 code CODE >57:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+22 code CODE >59:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+24 code CODE >60:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+25 code CODE >61:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+26 code CODE >62:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+27 code CODE >63:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+28 code CODE >66:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+2A code CODE >67:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+2B code CODE >68:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+2C code CODE >71:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+2E code CODE >72:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+2F code CODE >73:C:\Unb\Programamento\EE_semGit\TestPoint4.X\Tp4.2tacometro.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 75 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hinterrupt 0 0 ABS 0 interrupt -
+__Linterrupt 0 0 ABS 0 interrupt -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 800 0 ABS 0 - -
+__S1 75 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata 1 20 20 2 1
+interrupt 0 7B0 F60 50 2
+udata_shr 1 70 70 5 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
