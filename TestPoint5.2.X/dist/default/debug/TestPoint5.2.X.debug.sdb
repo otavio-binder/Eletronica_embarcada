@@ -1,0 +1,236 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"71 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/adc/src/adc.c
+[e E2495 . `uc
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+channel_AN1 1
+]
+"60 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\main.c
+[e E2498 . `uc
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+channel_AN1 1
+]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"39 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"53 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/adc/src/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"95
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+"43 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/fvr/src/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
+"39 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+"40 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"62
+[v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
+"71
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+"75
+[v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
+"38 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"39 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+[s S160 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc\pic16f1827.h
+[s S169 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S174 . 1 `S160 1 . 1 0 `S169 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES174  1 e 1 @11 ]
+[s S26 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"570
+[u S35 . 1 `S26 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES35  1 e 1 @17 ]
+"1152
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1214
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+[s S192 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1478
+[s S201 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S206 . 1 `S192 1 . 1 0 `S201 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES206  1 e 1 @149 ]
+"1648
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1706
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1847
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1867
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1887
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S52 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"1912
+[s S60 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S64 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S67 . 1 `S52 1 . 1 0 `S60 1 . 1 0 `S64 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES67  1 e 1 @157 ]
+"1967
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2039
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S342 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"2056
+[u S351 . 1 `S342 1 . 1 0 ]
+[v _LATAbits LATAbits `VES351  1 e 1 @268 ]
+"2096
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2430
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2457
+[v _FVRCON FVRCON `VEuc  1 e 1 @279 ]
+[s S121 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+`uc 1 TSRNG 1 0 :1:4 
+`uc 1 TSEN 1 0 :1:5 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+"2478
+[s S130 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+]
+[u S133 . 1 `S121 1 . 1 0 `S130 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES133  1 e 1 @279 ]
+"2861
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2913
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3487
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3516
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"5792
+[v _IOCBP IOCBP `VEuc  1 e 1 @916 ]
+"5862
+[v _IOCBN IOCBN `VEuc  1 e 1 @917 ]
+"5932
+[v _IOCBF IOCBF `VEuc  1 e 1 @918 ]
+"38 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/system/src/interrupt.c
+[v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
+"39 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"54
+[v main@adc_conv adc_conv `us  1 a 2 9 ]
+"56
+[v main@lum_max lum_max `i  1 a 2 7 ]
+"55
+[v main@lum_min lum_min `i  1 a 2 5 ]
+"68
+} 0
+"39 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"46
+} 0
+"38 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"40 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"50
+} 0
+"71
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"73
+} 0
+"43 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/fvr/src/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
+{
+"47
+} 0
+"39 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+{
+"46
+} 0
+"53 C:\Unb\Programamento\EE_semGit\TestPoint5.2.X\mcc_generated_files/adc/src/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"69
+} 0
+"95
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+{
+[v ADC_GetConversion@channel channel `E2495  1 a 1 wreg ]
+[v ADC_GetConversion@channel channel `E2495  1 a 1 wreg ]
+"98
+[v ADC_GetConversion@channel channel `E2495  1 a 1 3 ]
+"116
+} 0
